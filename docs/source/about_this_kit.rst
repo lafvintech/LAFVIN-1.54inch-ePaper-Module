@@ -3,14 +3,14 @@
 About This Kit
 ====================
 
-LAFVIN 2.9inch e-Paper HAT
+LAFVIN 1.54inch e-Paper Module
 -------------------------------
 
 .. figure:: ./Tutorial/img/main.jpg
    :align: center
    :width: 80%
 
-   *LAFVIN 2.9inch e-Paper HAT*
+   *LAFVIN 1.54inch e-Paper Module*
 
 Introduction
 ---------------
