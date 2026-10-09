@@ -6,7 +6,46 @@ Raspberry Pi User Guide
 Hardware Connection
 -------------------
 
-Insert the e-Paper HAT directly into the Raspberry Pi 40-pin GPIO header, and make sure all pins are aligned correctly before powering on.
+With power off, align the module's 2 x 12-pin connector with pins 1 to 24
+of the Raspberry Pi GPIO header.
+
+.. image:: ../Product/img/PI_GPIO.png
+   :align: center
+   :width: 75%
+   :alt: Raspberry Pi GPIO header pin definitions.
+
+.. list-table:: Raspberry Pi Pin Correspondence Table
+   :header-rows: 1
+   :widths: 30 45 25
+   :class: longtable
+
+   * - E-paper module pin
+     - Raspberry Pi signal
+     - Physical pin
+   * - VCC
+     - 3.3V
+     - Pin 1
+   * - GND
+     - GND
+     - Pin 6
+   * - DIN / MOSI
+     - GPIO10
+     - Pin 19
+   * - CLK / SCK
+     - GPIO11
+     - Pin 23
+   * - CS
+     - GPIO8
+     - Pin 24
+   * - DC
+     - GPIO25
+     - Pin 22
+   * - RST
+     - GPIO17
+     - Pin 11
+   * - BUSY
+     - GPIO24
+     - Pin 18
 
 .. .. image:: img/rpi_pin.jpg
 
