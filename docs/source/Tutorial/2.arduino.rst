@@ -85,9 +85,10 @@ Finally, click upload. A successful upload will look like this (Arduino 2.3.10):
 
 After uploading, you will see the example program patterns displayed on your e-Paper screen.
 
-.. figure:: img/现象.jpg
+.. image:: ../Product/img/arduino-r4-demo-optimized.png
    :align: center
-   :width: 80%
+   :width: 90%
+   :alt: Arduino UNO R4 running the 1.54-inch e-paper example.
 
 .. raw:: html
 
