@@ -1,61 +1,53 @@
 .. _arduino:
 
-Working With Arduino
-======================
+Arduino UNO R4
+==============
+
+Use an **Arduino UNO R4** to run this example.
 
 Hardware Connection
----------------------
+-------------------
 
-Use an 8PIN cable to connect, please refer to the pin correspondence table below:
+Use an 8PIN cable to connect. Link according to the table below.
 
-.. list-table:: Pin Correspondence Table
+.. list-table:: Arduino UNO R4 Wiring
    :header-rows: 1
-   :widths: 20 40 40
+   :widths: 40 60
    :class: longtable
 
-   * - e-Paper
-     - Arduino UNO
-     - Mega2560
+   * - E-paper module pin
+     - Arduino UNO R4 pin
    * - VCC
-     - 5V
-     - 5V
+     - VCC_INT (module 5 V supply)
    * - GND
      - GND
-     - GND
-   * - DIN
+   * - DIN / MOSI
      - D11
-     - D51
-   * - CLK
+   * - CLK / SCK
      - D13
-     - D52
    * - CS
-     - D10
-     - D10
+     - D7
    * - DC
-     - D9
-     - D9
+     - D6
    * - RST
-     - D8
-     - D8
+     - D5
    * - BUSY
-     - D7
-     - D7
+     - D4
 
-.. .. image:: img/arduino_pin.jpg
+The module regulates the supply internally and level-translates the host
+signals. The reference driver sets the SPI frequency to 4 MHz.
 
 Install Arduino IDE
----------------------
+-------------------
 
 You can refer to this tutorial to install Arduino IDE:
 
 :ref:`install_arduino_ide` 
 
 Run The Demo
---------------
+------------
 
-Download the code by clicking this link: `Download Code <https://codeload.github.com/lafvintech/LAFVIN-2.9inch-ePaper-HAT/zip/refs/heads/main>`_
-
-`Code Download <https://github.com/lafvintech/LAFVIN-2.9inch-ePaper-HAT/archive/refs/heads/main.zip>`_
+Download the code by clicking this link: `Download Code <https://codeload.github.com/lafvintech/LAFVIN-1.54inch-ePaper-Module/zip/refs/heads/main>`_
 
 After downloading and extracting the files, navigate to the Arduino folder where you'll find the example programs:
 
@@ -65,7 +57,7 @@ After downloading and extracting the files, navigate to the Arduino folder where
    
    *Arduino Example Folder*
 
-Open the epd2in13_V4.ino file:
+Open the EPD154_4C.ino file:
 
 .. figure:: img/fold2.png
    :align: center
@@ -73,15 +65,17 @@ Open the epd2in13_V4.ino file:
    
    *Opening the Example File*
 
-Select the corresponding Board and Port in the Tools menu of the Arduino IDE:
+In the Arduino IDE **Tools** menu, select the **Arduino UNO R4** model that
+matches your board and its connected port. The screenshot below selects
+**Arduino UNO R4 WiFi**:
 
 .. figure:: img/arduino3.png
    :align: center
-   :width: 80%
+   :width: 60%
    
-   *Selecting Board and Port*
+   *Selecting the Arduino UNO R4 Board and Port*
 
-Finally, click upload. A successful upload will look like this (Arduino 2.3.2):
+Finally, click upload. A successful upload will look like this (Arduino 2.3.10):
 
 .. figure:: img/arduino4.png
    :align: center
@@ -90,6 +84,10 @@ Finally, click upload. A successful upload will look like this (Arduino 2.3.2):
    *Successful Upload*
 
 After uploading, you will see the example program patterns displayed on your e-Paper screen.
+
+.. figure:: img/现象.jpg
+   :align: center
+   :width: 80%
 
 .. raw:: html
 

@@ -1,5 +1,5 @@
-LAFVIN 1.54inch e-Paper Module
-========================================
+LAFVIN 1.54 inch E-paper Module
+===============================
 
 .. toctree::
    :maxdepth: 1
@@ -12,8 +12,8 @@ LAFVIN 1.54inch e-Paper Module
    :caption: SETUP & PREPARATION
 
    Image/image_processing
-   Appendix/arduino_ide
-   Setup/raspberry_pi_os
+   Appendix/arduino_ins
+   Appendix/flash_raspberry_pi_os
 
 .. toctree::
    :maxdepth: 2
@@ -27,5 +27,4 @@ LAFVIN 1.54inch e-Paper Module
    :maxdepth: 1
    :caption: RESOURCES & SUPPORT
 
-   Resources/resources
-   Support/faq
+   Appendix/appendix

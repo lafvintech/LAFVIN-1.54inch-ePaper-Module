@@ -1,15 +1,22 @@
 ESP32
 =====
 
+.. note::
+
+   Before compiling or uploading the example, install the **esp32** board
+   package by **Espressif Systems** in Arduino IDE. Follow
+   :ref:`Environment Configuration <install_esp32_board_package>` to complete
+   the installation. If the package is already installed, continue below.
+
 Hardware Connection
 -------------------
 
-Use one of the module's 8-pin interfaces. The tables show example wiring;
-configure your display driver to use the same GPIO assignments. Supply VCC
-from the ESP32 board's 3.3 V pin.
+Use the module's 8-pin header. The examples provide a default
+ESP32-S3 profile and an alternate classic ESP32 profile. 
+Link according to the table below.
 
-ESP32-S3
-^^^^^^^^
+ESP32-S3 (default)
+^^^^^^^^^^^^^^^^^^
 
 .. list-table:: ESP32-S3 Pin Correspondence Table
    :header-rows: 1
@@ -61,3 +68,56 @@ Classic ESP32
      - GPIO19
    * - BUSY
      - GPIO21
+
+For classic ESP32, select ``EPD_BOARD_ESP32_CLASSIC`` instead of the default
+``EPD_BOARD_ESP32_S3`` profile in ``ESP32/EPD154_4C/BoardConfig.h``.
+
+.. figure:: img/switch.png
+   :align: center
+   :width: 80%
+
+The module regulates the supply internally and level-translates the host
+signals. The reference driver sets the SPI frequency to 4 MHz.
+
+Run The Demo
+------------
+
+Download the code by clicking this link: `Download Code <https://codeload.github.com/lafvintech/LAFVIN-1.54inch-ePaper-Module/zip/refs/heads/main>`_
+
+After downloading and extracting the files, navigate to the ESP32/EPD154_4C folder where you'll find the example programs:
+
+.. figure:: img/fold3.png
+   :align: center
+   :width: 80%
+   
+   *Arduino Example Folder*
+
+Open the EPD154_4C.ino file:
+
+.. figure:: img/fold4.png
+   :align: center
+   :width: 80%
+   
+   *Opening the Example File*
+
+Select the corresponding Board and Port in the Tools menu of the Arduino IDE:
+
+.. figure:: img/esp32s3-1.png
+   :align: center
+   :width: 60%
+   
+   *Esp32s3 Selecting Board and Port*
+
+.. figure:: img/esp32-1.png
+   :align: center
+   :width: 60%
+   
+   *Esp32 Selecting Board and Port*
+
+Finally, click upload. A successful upload will look like this (Arduino 2.3.10):
+
+.. figure:: img/esp32s3-2.png
+   :align: center
+   :width: 80%
+   
+   *Successful Upload*
